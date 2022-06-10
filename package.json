@@ -1,0 +1,16 @@
+{
+  "name": "evosc-sharp-docs",
+  "version": "1.0.0",
+  "description": "EvoSC# Documentation",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "author": "Evo",
+  "license": "ISC",
+  "dependencies": {
+    "vitepress": "^1.0.0-alpha.1"
+  }
+}
