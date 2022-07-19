@@ -14,8 +14,8 @@ export default {
     },
     nav: [
       { text: "EvoSC# Users", link: "/users/" },
-      { text: "Module Developpers", link: "/modudev/" },
-      { text: "EvoSC# Developpers", link: "/devs/" },
+      { text: "Module Developers", link: "/modudev/" },
+      { text: "EvoSC# Developers", link: "/devs/" },
     ],
     footer: {
       message: 'Made with ❤️ by EvoSC# Devs',
