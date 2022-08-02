@@ -1,28 +1,95 @@
 export default {
   lang: 'en-US',
-  title: "EvoSC Docs",
+  title: "EvoSC# Docs",
   description: "Documentation for EvoSC#.",
   themeConfig: {
     logo: '/evo.png',
     sidebar: {
-      "/devs/": [
+      "/development/core/": [
         {
           text: "Introduction",
-          items: [{ text: "Getting started", link: "/devs/getting-started.md" }],
+          items: [
+            { text: "About EvoSC#", link: "/development/core/index.md" },
+            { text: "Getting started", link: "/development/core/getting-started.md" }
+          ],
         },
       ],
+      "/development/modules/": [
+        {
+          text: "Introduction",
+          items: [
+            { text: "Introduction", link: "/development/modules/index.md" },
+          ],
+        },
+      ],
+      "/api/Core/": [
+        {
+          text: "EvoSC.Core", items: [
+            {text: "Commands", link: "/api/Core/Commands/"},
+            {text: "Configuration", link: "/api/Core/Configuration/"},
+            {text: "Events", link: "/api/Core/Events/"},
+            {text: "Exceptions", link: "/api/Core/Exceptions/"},
+            {text: "Helpers", link: "/api/Core/Helpers/"},
+            {text: "Plugins", link: "/api/Core/Plugins/"},
+            {text: "Services", link: "/api/Core/Services/"},
+          ]
+        }
+      ],
+      "/api/Domain/": [
+        {
+          text: "EvoSC.Domain", items: [
+            {text: "Groups", link: "/api/Domain/Groups/"},
+            {text: "Maps", link: "/api/Domain/Maps/"},
+            {text: "Players", link: "/api/Domain/Players/"},
+          ]
+        }
+      ],
+      "/api/Interfaces/": [
+        {
+          text: "EvoSC.Interfaces", items: [
+            {text: "Commands", link: "/api/Interfaces/Commands/"},
+            {text: "Messages", link: "/api/Interfaces/Messages/"},
+            {text: "Players", link: "/api/Interfaces/Players/"},
+            {text: "UI", link: "/api/Interfaces/UI/"},
+          ]
+        }
+      ],
+      "/api/Modules/": [
+        {
+          text: "EvoSC.Modules", items: [
+            {text: "Info", link: "/api/Modules/Info/"},
+          ]
+        }
+      ],
+      "/api/": [
+        {
+          text: "Namespaces",
+          items: [
+            {text: "EvoSC.Core", link: "/api/Core/"},
+            {text: "EvoSC.Domain", link: "/api/Domain/"},
+            {text: "EvoSC.Interfaces", link: "/api/Interfaces/"},
+            {text: "EvoSC.Modules", link: "/api/Modules/"},
+          ]
+        }
+      ],
+
     },
     nav: [
-      { text: "EvoSC# Users", link: "/users/" },
-      { text: "Module Developers", link: "/modudev/" },
-      { text: "EvoSC# Developers", link: "/devs/" },
+      { text: "For Server Admins", link: "/using-evosc/" },
+      { text: "For Developers", items:
+      [
+        { text: "Code Documentation", link: "/api/" },
+        { text: "Working on the core", link: "/development/core/" },
+        { text: "Developing modules/plugins ", link: "/development/plugins/"}
+      ], 
+    },
     ],
     footer: {
       message: 'Made with ❤️ by EvoSC# Devs',
       copyright: 'Copyright © 2022 Evo'
     },
     editLink: {
-      pattern: 'https://github.com/EvoTM/EvoSC-Sharp-Documentation/master/docs/:path',
+      pattern: 'https://github.com/EvoTM/EvoSC-sharp-documentation/master/docs/:path',
       text: 'Edit this page on GitHub'
     },
     socialLinks: [
