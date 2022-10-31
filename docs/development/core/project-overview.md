@@ -15,6 +15,10 @@ Each of the projects have a set of rules on which other projects can reference t
 | `EvoSC.Commands` | Main code that provides chat command parsing and handling. | Can be referenced by modules, `EvoSC.Modules` and `EvoSC` |
 | `EvoSC.EvoSC` | This is the EvoSC application itself as a console project. | Cannot be referenced by any projects. |
 
+#### Reference Graph
+The graph visualizes how projects can be referenced from eachother:
+![Reference Graph](./img/reference_graph.png)
+
 #### Internal Modules
 There is an additional directory under `src` that isnt exactly a project directory in itself called `Modules`. But it contains multiple projects that form all the internal and core modules of EvoSC. These modules are referenced within the assembly of the main application itself and ship with it.
 
