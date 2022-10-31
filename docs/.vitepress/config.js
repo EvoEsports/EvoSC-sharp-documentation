@@ -10,7 +10,8 @@ export default {
           text: "Introduction",
           items: [
             { text: "About EvoSC#", link: "/development/core/index.md" },
-            { text: "Getting started", link: "/development/core/getting-started.md" }
+            { text: "Getting started", link: "/development/core/getting-started.md" },
+            { text: "Overview", link: "/development/core/project-overview.md" }
           ],
         },
       ],
