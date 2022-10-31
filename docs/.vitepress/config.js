@@ -11,7 +11,8 @@ export default {
           items: [
             { text: "About EvoSC#", link: "/development/core/index.md" },
             { text: "Getting started", link: "/development/core/getting-started.md" },
-            { text: "Overview", link: "/development/core/project-overview.md" }
+            { text: "Overview", link: "/development/core/project-overview.md" },
+            { text: "Internal Modules", link: "/development/core/internal-modules.md" }
           ],
         },
       ],
@@ -81,7 +82,7 @@ export default {
       [
         { text: "Code Documentation", link: "/api/" },
         { text: "Working on the core", link: "/development/core/" },
-        { text: "Developing modules/plugins ", link: "/development/plugins/"}
+        { text: "Developing modules ", link: "/development/modules/"}
       ], 
     },
     ],
