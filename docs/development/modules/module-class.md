@@ -28,7 +28,7 @@ The constructor also supports dependency injection, and it will have access to t
 [Module(Name = "ExampleModule", Description = "An example module to get people started.", IsInternal = true)]
 public class ExampleModule : EvoScModule
 {
-    public ExampleModule(MyService service)
+    public ExampleModule(MyService service) // [!code focus:4]
     {
         // do something with MyService ...
     }
@@ -49,9 +49,9 @@ When a module is disabled, it is still loaded in memory, but the logic should no
 Example with the `IToggleable`:
 ```csharp
 [Module(Name = "ExampleModule", Description = "An example module to get people started.", IsInternal = true)]
-public class ExampleModule : EvoScModule, IToggleable
+public class ExampleModule : EvoScModule, IToggleable// [!code focus]
 {
-    public Task Enable()
+    public Task Enable()// [!code focus:9]
     {
         // enable stuff in the module
     }
@@ -60,6 +60,7 @@ public class ExampleModule : EvoScModule, IToggleable
     {
         // disable stuff from the module
     }
+}
 ```
 
 ## Installable Modules

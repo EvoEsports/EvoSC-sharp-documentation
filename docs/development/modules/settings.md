@@ -54,7 +54,7 @@ For example, imagine you need access to the settings in a controller:
 [Controller]
 public class ExampleController : EvoScController<IControllerContext>
 {
-    public ExampleController(IMySettings mySettings)
+    public ExampleController(IMySettings mySettings) // [!code focus:5]
     {
         // you can now access the options
         Console.Log(mySettings.MyOption);
