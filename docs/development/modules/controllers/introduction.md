@@ -60,3 +60,6 @@ The most important thing to be aware of when specifying the context type is, if 
 
 ***Make sure you use the correct context type for the actions in your controller!***
 :::
+
+## Subscribing to Actions
+How this is done depends on the type of action and each requires their own page to explain it. We recommend you begin looking into how to subscribe to [events](/development/modules/controllers/events.md).

@@ -32,7 +32,7 @@ export default {
           text: "Controllers",
           items: [
             { text: "Introduction", link: "/development/modules/controllers/introduction.md" },
-            { text: "Events", link: "/development/modules/controllers/module-class.md" },
+            { text: "Events", link: "/development/modules/controllers/events.md" },
             { text: "Chat Commands", link: "/development/modules/controllers/chat-commands.md" },
             { text: "Manialink Actions", link: "/development/modules/controllers/manialink-actions.md" },
           ]
