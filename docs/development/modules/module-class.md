@@ -12,7 +12,7 @@ One important note is that the name of the module *must* be unique.
 
 For example, let's define a module class of a new module `ExampleModule`:
 ```csharp
-[Module(Name = "ExampleModule", Description = "An example module to get people started.", IsInternal = true)]
+[Module(Name = "ExampleModule", Description = "An example module to get people started.")]
 public class ExampleModule : EvoScModule
 {
 }
@@ -25,7 +25,7 @@ If you need some type of logic to set something up, perhaps you need to set thin
 
 The constructor also supports dependency injection, and it will have access to the core's services, as well as the module's own services:
 ```csharp
-[Module(Name = "ExampleModule", Description = "An example module to get people started.", IsInternal = true)]
+[Module(Name = "ExampleModule", Description = "An example module to get people started.")]
 public class ExampleModule : EvoScModule
 {
     public ExampleModule(MyService service) // [!code focus:4]
