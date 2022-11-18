@@ -48,7 +48,7 @@ When a module is disabled, it is still loaded in memory, but the logic should no
 
 Example with the `IToggleable`:
 ```csharp
-[Module(Name = "ExampleModule", Description = "An example module to get people started.", IsInternal = true)]
+[Module(Name = "ExampleModule", Description = "An example module to get people started.")]
 public class ExampleModule : EvoScModule, IToggleable// [!code focus]
 {
     public Task Enable()// [!code focus:9]
