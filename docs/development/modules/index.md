@@ -6,7 +6,7 @@ The framework itself provides a set of coding rules and patterns for developers 
 It is built around *controllers* which holds most of the logic. Controllers respond to actions and events, which are handled and responded to if desired.
 
 ## Logic Abstraction Levels
-The code within a module have different levels of abstraction. For example, we try to avoid any logic in the main module class. And while controllers are meant to handle the logic, we also abstract lower level logic out of the controllers and put them in services.
+The code within a module have different levels of abstraction. For example, we try to avoid any logic in the main module class. And while controllers are meant to handle the logic, we also abstract lower level logic out of the controllers and put them in [services](/development/modules/advanced/services).
 
 This helps with the test- and maintainability of the code, and it is easier to read and understand what is happening.
 
