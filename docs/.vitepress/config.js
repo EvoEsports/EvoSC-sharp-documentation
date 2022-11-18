@@ -21,8 +21,39 @@ export default {
           text: "Introduction",
           items: [
             { text: "Introduction", link: "/development/modules/index.md" },
+            { text: "The Module Class", link: "/development/modules/module-class.md" },
+            { text: "Settings", link: "/development/modules/settings.md" },
+            { text: "Services", link: "/development/modules/services.md" },
           ],
         },
+        {
+          text: "Controllers",
+          items: [
+            { text: "Introduction", link: "/development/modules/controllers/introduction.md" },
+            { text: "Events", link: "/development/modules/controllers/module-class.md" },
+            { text: "Chat Commands", link: "/development/modules/controllers/chat-commands.md" },
+            { text: "Manialink Actions", link: "/development/modules/controllers/manialink-actions.md" },
+          ]
+        },
+        {
+          text: "Manialinks",
+          items: [
+            { text: "Introduction", link: "/development/modules/manialinks/introduction.md" },
+          ]
+        },
+        {
+          text: "Access Control",
+          items: [
+            { text: "Permissions", link: "/development/modules/access-control/permissions.md" }
+          ]
+        },
+        {
+          text: "Advanced",
+          items: [
+            { text: "Action Middleware", link: "/development/modules/advanced/middlewares.md" },
+            { text: "Migrations", link: "/development/modules/advanced/migrations.md" },
+          ]
+        }
       ],
       "/api/Core/": [
         {
