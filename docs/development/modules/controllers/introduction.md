@@ -8,7 +8,7 @@ The EvoSC module framework provides convenient ways to subscribe to these variou
 But for now, let's first look at how to create a controller!
 
 ## Creating A Controller
-Controllers are simply a class that inherits `EvoScController`. You can tell the application to register the controller for you by annotating the class with the `Controller]` attribute.
+Controllers are simply a class that inherits `EvoScController`. You can tell the application to register the controller for you by annotating the class with the `[Controller]` attribute.
 
 For example, let's say you have your module project set up. You have created the module class and is ready to implement some features for your module. We'll start by defining the controller class:
 
