@@ -2,6 +2,9 @@ export default {
   lang: 'en-US',
   title: "EvoSC# Docs",
   description: "Documentation for EvoSC#.",
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     logo: '/evo.png',
     sidebar: {
@@ -23,7 +26,6 @@ export default {
             { text: "Introduction", link: "/development/modules/index.md" },
             { text: "The Module Class", link: "/development/modules/module-class.md" },
             { text: "Settings", link: "/development/modules/settings.md" },
-            { text: "Services", link: "/development/modules/services.md" },
           ],
         },
         {
@@ -50,6 +52,7 @@ export default {
         {
           text: "Advanced",
           items: [
+            { text: "Services", link: "/development/modules/advanced/services.md" },
             { text: "Action Middleware", link: "/development/modules/advanced/middlewares.md" },
             { text: "Migrations", link: "/development/modules/advanced/migrations.md" },
           ]

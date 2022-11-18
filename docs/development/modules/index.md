@@ -25,8 +25,8 @@ public class MyController : EvoScController<CommandInteractionContext>
 
     [ChatCommand("kick", "Kicks a player.")]
     public Task KickPlayerCommand(IPlayer player) =>
-        // don't do this
-        _server.Remote.KickAsync(PlayerUtils.ConvertAccountIdToLogin(player.AccountId));
+        // don't put the "raw logic" here
+        _server.Remote.KickAsync(PlayerUtils.ConvertAccountIdToLogin(player.AccountId)); // [!code error]
 }
 ```
 
@@ -41,7 +41,7 @@ public class MyController : EvoScController<CommandInteractionContext>
 
     [ChatCommand("kick", "Kicks a player.")]
     public Task KickPlayerCommand(IPlayer player) =>
-        // Abstract the kick logic out of the controller and in a service instead:
+        // Abstract the kick logic out of the controller and in a service
         _players.KickAsync(player);
 }
 ```
