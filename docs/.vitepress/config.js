@@ -2,6 +2,9 @@ export default {
   lang: 'en-US',
   title: "EvoSC# Docs",
   description: "Documentation for EvoSC#.",
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     logo: '/evo.png',
     sidebar: {
@@ -10,7 +13,9 @@ export default {
           text: "Introduction",
           items: [
             { text: "About EvoSC#", link: "/development/core/index.md" },
-            { text: "Getting started", link: "/development/core/getting-started.md" }
+            { text: "Getting started", link: "/development/core/getting-started.md" },
+            { text: "Overview", link: "/development/core/project-overview.md" },
+            { text: "Internal Modules", link: "/development/core/internal-modules.md" }
           ],
         },
       ],
@@ -19,8 +24,39 @@ export default {
           text: "Introduction",
           items: [
             { text: "Introduction", link: "/development/modules/index.md" },
+            { text: "The Module Class", link: "/development/modules/module-class.md" },
+            { text: "Settings", link: "/development/modules/settings.md" },
           ],
         },
+        {
+          text: "Controllers",
+          items: [
+            { text: "Introduction", link: "/development/modules/controllers/introduction.md" },
+            { text: "Events", link: "/development/modules/controllers/events.md" },
+            { text: "Chat Commands", link: "/development/modules/controllers/chat-commands.md" },
+            { text: "Manialink Actions", link: "/development/modules/controllers/manialink-actions.md" },
+          ]
+        },
+        {
+          text: "Manialinks",
+          items: [
+            { text: "Introduction", link: "/development/modules/manialinks/introduction.md" },
+          ]
+        },
+        {
+          text: "Access Control",
+          items: [
+            { text: "Permissions", link: "/development/modules/access-control/permissions.md" }
+          ]
+        },
+        {
+          text: "Advanced",
+          items: [
+            { text: "Services", link: "/development/modules/advanced/services.md" },
+            { text: "Action Middleware", link: "/development/modules/advanced/middlewares.md" },
+            { text: "Migrations", link: "/development/modules/advanced/migrations.md" },
+          ]
+        }
       ],
       "/api/Core/": [
         {
@@ -80,7 +116,7 @@ export default {
       [
         { text: "Code Documentation", link: "/api/" },
         { text: "Working on the core", link: "/development/core/" },
-        { text: "Developing modules/plugins ", link: "/development/plugins/"}
+        { text: "Developing modules ", link: "/development/modules/"}
       ], 
     },
     ],
