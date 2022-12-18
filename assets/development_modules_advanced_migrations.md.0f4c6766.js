@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app.f97c8964.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"development/modules/advanced/migrations.md"}'),o={name:"development/modules/advanced/migrations.md"};function n(r,s,c,d,i,m){return a(),t("div")}const l=e(o,[["render",n]]);export{_ as __pageData,l as default};
