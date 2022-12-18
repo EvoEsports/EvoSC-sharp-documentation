@@ -8,11 +8,9 @@ Besides the class providing some basic information about a module, it can also h
 ## Defining the module class
 The module class definition is very simple. Create a new class, annotate it with the `[Module]` attribute and inherit `EvoScModule` and you are done! Optionally, inherit interfaces to handle enabling/disabling or installing/uninstalling.
 
-One important note is that the name of the module *must* be unique.
-
 For example, let's define a module class of a new module `ExampleModule`:
 ```csharp
-[Module(Name = "ExampleModule", Description = "An example module to get people started.")]
+[Module]
 public class ExampleModule : EvoScModule
 {
 }
@@ -25,7 +23,7 @@ If you need some type of logic to set something up, perhaps you need to set thin
 
 The constructor also supports dependency injection, and it will have access to the core's services, as well as the module's own services:
 ```csharp
-[Module(Name = "ExampleModule", Description = "An example module to get people started.")]
+[Module]
 public class ExampleModule : EvoScModule
 {
     public ExampleModule(MyService service) // [!code focus:4]
@@ -48,7 +46,7 @@ When a module is disabled, it is still loaded in memory, but the logic should no
 
 Example with the `IToggleable`:
 ```csharp
-[Module(Name = "ExampleModule", Description = "An example module to get people started.")]
+[Module]
 public class ExampleModule : EvoScModule, IToggleable// [!code focus]
 {
     public Task Enable()// [!code focus:9]
