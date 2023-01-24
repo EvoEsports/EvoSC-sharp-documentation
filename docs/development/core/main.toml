@@ -34,9 +34,23 @@ retryConnection = true
 
 [Path]
 # Path to the maps folder
-maps = ""
+maps = "<server root>/UserData/Maps"
 
 [Modules]
 # Signature verification of module's files. If enabled and verification fails, the module will not load.
 requireSignatureVerification = false
 moduleDirectories = ["modules"]
+
+[Theme]
+# The primary text color to use.
+Chat.primaryTextColor = "fff"
+# The secondary text color to use.
+Chat.secondaryTextColor = "eee"
+# The color to use for info messages.
+Chat.infoTextColor = "29b"
+# The color to use for error messages.
+Chat.errorTextColor = "c44"
+# The color to use for warning messages.
+Chat.warningTextColor = "e83"
+# The color to use for success messages.
+Chat.successTextColor = "5b6"
