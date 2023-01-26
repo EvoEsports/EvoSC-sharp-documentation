@@ -5,7 +5,7 @@ This documentation page will help you set up a directory containing everything y
 ## Prerequisites
 
 Start by installing [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) depending on your OS.
-You will also need [.NET 6](https://dotnet.microsoft.com/en-us/download)
+You will also need [.NET 7](https://dotnet.microsoft.com/en-us/download)
 
 ## Setting up a server
 
@@ -25,5 +25,8 @@ Your server should be up and running! You can connect to it in Trackmania in the
 
 ## Booting up EvoSC#
 
-Go to the ``EvoSC`` directory, and run ``dotnet build`` to compile the source code. __You will need to do that every time before starting EvoSC if you modified the code__, else the changes won't apply.  
+Go to the ``EvoSC`` directory, and run ``dotnet build`` to compile the source code. __You will need to do that every time before starting EvoSC if you modified the code__, else the changes won't apply.
+
+If you are using the default docker-compose setup, create the ``config`` directory under ``src/EvoSC/bin/Debug/net7.0/`` and place the [example main.toml](main.toml) inside.
+
 Then, run ``dotnet run``. EvoSC# is now up and running! Test it by connecting to the server: if there is a message with your login in the chat when connecting, everything should work. If not, check the terminal for errors.
