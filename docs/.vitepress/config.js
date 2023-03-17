@@ -42,12 +42,17 @@ export default {
           text: "Manialinks",
           items: [
             { text: "Introduction", link: "/development/modules/manialinks/introduction.md" },
+            { text: "Templates", link: "/development/modules/manialinks/templates.md" },
+            { text: "Actions", link: "/development/modules/manialinks/actions.md" },
+            { text: "Form Validation", link: "/development/modules/manialinks/form-validation.md" },
+            { text: "Permissions", link: "/development/modules/manialinks/permissions.md" },
           ]
         },
         {
           text: "Access Control",
           items: [
-            { text: "Permissions", link: "/development/modules/access-control/permissions.md" }
+            { text: "Permissions", link: "/development/modules/access-control/permissions.md" },
+            { text: "Auditing", link: "/development/modules/advanced/auditing.md" },
           ]
         },
         {
