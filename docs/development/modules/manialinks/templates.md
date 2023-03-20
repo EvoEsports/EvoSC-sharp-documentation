@@ -36,7 +36,61 @@ Fill in the file with the following contents:
 </template>
 ```
 
+Everything related to a template must be within the `<template>` tag. The actual content that is displayed must be within the `<component>` tag.
+
 This will display a label saying `Hello <name>` where Name is a parameter that we will send to the manialink when display it.
+
+## Template Directives
+The template directives are used to configure things like imports and properties that can be used within a template.
+
+### The `property` directive
+The `property` directive is used to tell the template engine that we want to expose a property for the template component. The property must have a defined type and a name. Optionally a default value can be specified.
+
+Example:
+```xml
+<property type="string" name="NickName" default="Player" />
+```
+In this example, we create a new property for the component that is a string with the name *NickName* and if this property is not set, it will fall back to the default value of *Player*.
+
+### The `using` directive
+The using directive works the same way as C# `using` directive. It allows you to use types which are defined within a certain namespace without having to use the full namespace. This directive is required for any type that is not a native type.
+
+Example:
+```xml
+<using namespace="EvoSC.Common.Interfaces.Models" />
+```
+In this example, we expose the *EvoSC.Common.Interfaces.Models* namespace, which in EvoSC provides access to all models that EvoSC uses.
+
+### The `import` directive
+The `import` directive is used to import other template components to be used in the template as a custom component.
+
+So for example, let's say we have a template that greets a player. This component is created inside a module called `MyModule`:
+`GreetPlayer.xml`:
+```xml
+<template>
+    <property type="string" name="NickName" />
+
+    <component>
+        <label text="Hello {{ NickName }}"/>
+    </component>
+</template>
+```
+
+We can now use this component in other templates:
+```xml
+<template>
+    <import component="MyModule.GreetPlayer" as="GreetPlayer" /> // [!code focus]
+
+    <component>
+        <GreetPlayer NickName="My Nickname" /> // [!code focus]
+    </component>
+</template>
+```
+
+### The `script` directive
+The `script` is used to import ManiaScript files.
+
+For more information about this, check out the [ManiaScript](maniascript.md) page.
 
 ## Displaying & Hiding Manialinks
 To create a simple set up to test your manialink. Let's create a command to send the manialink with the Manialink Manager:
@@ -55,11 +109,11 @@ public class ShowMyManialinkController : EvoScController<CommandInteractionConte
     [ChatCommand("show", "Show a manialink")]
     public async Task ShowManialink()
     {
-        await _manialinks.SendManialinkAsync(Context.Player, "MyModule.HelloPlayer", new
-        {
-            // Same property name as the one in our manialink template
-            Name = Context.Player.NickName
-        });
+        await _manialinks.SendManialinkAsync(Context.Player, "MyModule.HelloPlayer", new // [!code focus]
+        { // [!code focus]
+            // Same property name as the one in our manialink template // [!code focus]
+            Name = Context.Player.NickName // [!code focus]
+        }); // [!code focus]
     }
 }
 ```
@@ -75,7 +129,7 @@ So for our example, to hide the manialink, we can create a new command to hide t
 [ChatCommand("hide", "Hide the manialink.")]
 public async Task ShowManialink()
 {
-    await _manialinks.HideManialinkAsync(Context.Player, "MyModule.HelloPlayer");
+    await _manialinks.HideManialinkAsync(Context.Player, "MyModule.HelloPlayer"); // [!code focus]
 }
 ```
 
