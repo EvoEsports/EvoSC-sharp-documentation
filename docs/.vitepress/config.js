@@ -45,6 +45,7 @@ export default {
             { text: "Templates", link: "/development/modules/manialinks/templates.md" },
             { text: "ManiaScript", link: "/development/modules/manialinks/maniascript.md" },
             { text: "Actions", link: "/development/modules/manialinks/actions.md" },
+            { text: "Manialink Controllers", link: "/development/modules/manialinks/controllers.md" },
             { text: "Form Validation", link: "/development/modules/manialinks/form-validation.md" },
             { text: "Permissions", link: "/development/modules/manialinks/permissions.md" },
           ]
