@@ -58,11 +58,28 @@ export default {
           ]
         },
         {
+          text: "Action Pipelines",
+          items: [
+            { text: "Introduction", link: "/development/modules/advanced/services.md" },
+            { text: "Action Middleware", link: "/development/modules/advanced/middlewares.md" },
+            { text: "Chat Router", link: "/development/modules/advanced/chat-router.md" }
+          ]
+        },
+        {
           text: "Advanced",
           items: [
             { text: "Services", link: "/development/modules/advanced/services.md" },
-            { text: "Action Middleware", link: "/development/modules/advanced/middlewares.md" },
             { text: "Migrations", link: "/development/modules/advanced/migrations.md" },
+          ]
+        },
+        {
+          text: "Utility",
+          items: [
+            { text: "EnumIdentifier", link: "/development/modules/utility/enum-identifier.md" },
+            { text: "Match Settings", link: "/development/modules/advanced/matchsettings.md" },
+            { text: "Text Formatting", link: "/development/modules/advanced/text-formatting.md" },
+            { text: "Player Utilities", link: "/development/modules/advanced/player-utilities.md" },
+            { text: "Server Chat Message", link: "/development/modules/advanced/server-chat-message.md" },
           ]
         }
       ],
