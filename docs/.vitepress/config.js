@@ -50,7 +50,7 @@ export default {
           ]
         },
         {
-          text: "Access Control",
+          text: "Security",
           items: [
             { text: "Permissions", link: "/development/modules/access-control/permissions.md" },
             { text: "Auditing", link: "/development/modules/advanced/auditing.md" },
