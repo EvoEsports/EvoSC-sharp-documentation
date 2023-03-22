@@ -60,9 +60,9 @@ export default {
         {
           text: "Action Pipelines",
           items: [
-            { text: "Introduction", link: "/development/modules/advanced/services.md" },
-            { text: "Action Middleware", link: "/development/modules/advanced/middlewares.md" },
-            { text: "Chat Router", link: "/development/modules/advanced/chat-router.md" }
+            { text: "Introduction", link: "/development/modules/action-pipelines/introduction.md" },
+            { text: "Action Middleware", link: "/development/modules/action-pipelines/middlewares.md" },
+            { text: "Chat Router", link: "/development/modules/action-pipelines/chat-router.md" }
           ]
         },
         {
