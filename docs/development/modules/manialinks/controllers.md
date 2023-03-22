@@ -145,7 +145,8 @@ public class ExampleManialinkController : ManialinkController
 }
 ```
 
-You can also send to specific player. For example to send to the player that triggered the action:
+You can also send this to a specific player. For example, to send a Manialink to the player that triggered the action:
+
 ```csharp
 [Controller]
 public class ExampleManialinkController : ManialinkController

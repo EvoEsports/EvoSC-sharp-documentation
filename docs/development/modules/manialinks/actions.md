@@ -4,13 +4,13 @@ To communicate user actions from manialinks to the controller, EvoSC make use of
 ## Routing
 Every Manialink action has a so called "route" which you can call to trigger an action. The routing system is very similar to HTTP API routing.
 
-The difference however, is that routes does not start with a slash. For example, a simple route would be `myController/myAction`
+The difference however, is that Manialink routes does not start with a slash. Instead, a simple Manialink route would look like this: `myController/myAction`
 
-You can also pass parameters dynamic parameters to the route, which can be picked up by the action method.
+You can also pass parameters dynamic parameters using the route, which can be picked up by the action method.
 
-For example `myController/myAction/{myParam}` has a parameter `myParam`, so you can call the route like `myController/myAction/1`, `myController/myAction/2`, `myController/myAction/342` etc.
+An example could be `myController/myAction/{myParam}` which has a parameter `myParam`. This allows you to pass the number through the route like `myController/myAction/1`, `myController/myAction/2`, `myController/myAction/342` etc.
 
-The controller allows you to define more complex combinations of static route components an parameters like `a/{b}/c/{d}/{e}`.
+The controller also allows you to define more complex combinations of static route components and parameters like `a/{b}/c/{d}/{e}`.
 
 ### Allowed route patterns
 The design decisions for route matching allows different scenarios such as:

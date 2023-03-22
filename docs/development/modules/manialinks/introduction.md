@@ -8,7 +8,8 @@ Manialinks is an important part in creating a good and user-friendly experience 
 
 EvoSC provides a complete framework for display and interaction with manialinks.
 
-## Syntax highlighting for Manialink files in Rider
+## Syntax highlighting
+### Rider
 Open Rider settings `File -> Settings` and then go to `Editor -> File Types`.
 
 Under *Recognized File Types* find the `XML` file type.
