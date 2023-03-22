@@ -38,7 +38,7 @@ Actions are defined within a manialink controller. Head over to [Manialink Contr
 ## Form Actions
 Some manlialink tags such as label or quad exposes an `action` attribute. This makes the UI element clickable which calls the page action callback. We can call this a *form action* because it works similar to HTML forms.
 
-You can also define `<entry>` tags which are input elements where the user can write things in like text, a number, a password etc. You also have other input elements like `<textedit>`. What is common about these elements is that the values which the user inserts into these elements gets sent along with the action.
+You can also define `<entry>` tags which are input elements where the user can input things like text, a number, a password etc. You also have other input elements like `<textedit>` which allows you to input multiline text. The common characteristic of these elements is that the values which the user inserts into these elements will get sent along with the action.
 
 You can also group these elements within a `<frame>` so you can isolate input elements within a frame, and only those values get sent with the action.
 
