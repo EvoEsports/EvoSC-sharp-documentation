@@ -136,7 +136,7 @@ When you show manialinks from a ManialinkController inherited class, EvoSC will 
 
 So let's illustrate this with an example. EvoSC provides its own manialink components which all modules can use. One of them is the `FormEntry` component. This component will automatically read any validation result and show an error message in case of invalid input data.
 
-To expand even further on the previous example, we want to create a manialink that allows users to set a nickname. It requires some form of validation and a way to tell the user if they did something wrong. So we can use the `FormEntry` component in our manialink:
+To expand even further on the previous example, we want to create a manialink that allows users to set a nickname. It requires some form of validation and a way to tell the user if they did something wrong. So we can use the `FormEntry` component in our manialink.
 ```xml
 <component>
     <using namespace="EvoSC.Manialinks.Validation" />
@@ -154,12 +154,12 @@ To expand even further on the previous example, we want to create a manialink th
                     label="Nickname:"
                     w="30"
             />
-            <FormSubmit x="18" y="-21" text="Login" action="MyActions/SetNickname" />
+            <FormSubmit x="10" y="-21" text="Set Nickname" action="MyActions/SetNickname" />
         </frame>
     </template>
-    <script resource="Scripts.MyManialinkScript" />
 </component>
 ```
+
 Here we import the `EvoSC.FormEntry` and set the XML tag to `FormEntry` which we can use in the component code. We also need to make sure to tell the template engine where to find the validation models, under `EvoSC.Manialinks.Validation`.
 
 Then we set two properties, the `Validation` and `Nickname` property. The `Validation` property will be set automatically by EvoSC, and the idea is to send back the user's input in the `Nickname` property. We do this ourselves.
@@ -184,7 +184,7 @@ public class MyActionsController : ManialinkController
         }
         else
         {
-            return ShowAsync("MyModule.SetNickname", new { Nickname = userInput.Nickname }); // [!code hl]
+            return ShowAsync("MyModule.SetNickname", new { userInput.Nickname }); // [!code hl]
         }
     }
 }
