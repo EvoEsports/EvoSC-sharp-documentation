@@ -2,7 +2,7 @@
 To communicate user actions from manialinks to the controller, EvoSC make use of the page action callbacks from XMLRPC which can be triggered through various ways in manialinks.
 
 ## Routing
-Every manialink action has a so called "route" to call which triggers these actions. The routing system is very similar to HTTP API routing.
+Every Manialink action has a so called "route" which you can call to trigger an action. The routing system is very similar to HTTP API routing.
 
 The difference however, is that routes does not start with a slash. For example, a simple route would be `myController/myAction`
 
