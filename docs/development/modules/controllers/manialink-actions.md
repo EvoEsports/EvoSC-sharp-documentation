@@ -1,2 +1,2 @@
 # Manialink Actions
-todo ...
+To respond to manialink actions, you need to create a manialink controller. For information on how this works, head over to the manialink section on [Manialink Controllers](../manialinks/controllers.md).

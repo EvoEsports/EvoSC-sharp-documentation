@@ -42,20 +42,44 @@ export default {
           text: "Manialinks",
           items: [
             { text: "Introduction", link: "/development/modules/manialinks/introduction.md" },
+            { text: "Templates", link: "/development/modules/manialinks/templates.md" },
+            { text: "ManiaScript", link: "/development/modules/manialinks/maniascript.md" },
+            { text: "Actions", link: "/development/modules/manialinks/actions.md" },
+            { text: "Manialink Controllers", link: "/development/modules/manialinks/controllers.md" },
+            { text: "Form Validation", link: "/development/modules/manialinks/form-validation.md" },
+            { text: "Permissions", link: "/development/modules/manialinks/permissions.md" },
           ]
         },
         {
-          text: "Access Control",
+          text: "Security",
           items: [
-            { text: "Permissions", link: "/development/modules/access-control/permissions.md" }
+            { text: "Permissions", link: "/development/modules/access-control/permissions.md" },
+            { text: "Auditing", link: "/development/modules/advanced/auditing.md" },
+          ]
+        },
+        {
+          text: "Action Pipelines",
+          items: [
+            { text: "Introduction", link: "/development/modules/action-pipelines/introduction.md" },
+            { text: "Action Middleware", link: "/development/modules/action-pipelines/middlewares.md" },
+            { text: "Chat Router", link: "/development/modules/action-pipelines/chat-router.md" }
           ]
         },
         {
           text: "Advanced",
           items: [
             { text: "Services", link: "/development/modules/advanced/services.md" },
-            { text: "Action Middleware", link: "/development/modules/advanced/middlewares.md" },
             { text: "Migrations", link: "/development/modules/advanced/migrations.md" },
+          ]
+        },
+        {
+          text: "Utility",
+          items: [
+            { text: "EnumIdentifier", link: "/development/modules/utility/enum-identifier.md" },
+            { text: "Match Settings", link: "/development/modules/advanced/matchsettings.md" },
+            { text: "Text Formatting", link: "/development/modules/advanced/text-formatting.md" },
+            { text: "Player Utilities", link: "/development/modules/advanced/player-utilities.md" },
+            { text: "Server Chat Message", link: "/development/modules/advanced/server-chat-message.md" },
           ]
         }
       ],
