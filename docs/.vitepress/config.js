@@ -2,7 +2,7 @@ export default {
   lang: 'en-US',
   title: "EvoSC# Docs",
   description: "Documentation for EvoSC#.",
-  base: "/EvoSC-sharp-documentation/",
+  base: "/",
   markdown: {
     lineNumbers: true
   },
