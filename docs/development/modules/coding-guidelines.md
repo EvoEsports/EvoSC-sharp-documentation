@@ -52,3 +52,11 @@ As much of the code as possible within a module should also be covered by unit t
 The module framework and core already does a lot of things for you, and the chances are that you don't have to re-create a common function. For example, there are dedicated services and helpers for editing [Match Settings](/development/modules/advanced/matchsettings) or building [formatted chat messages](/development/modules/advanced/text-formatting). Another example could be showing [Manialinks](/development/modules/manialinks/introduction) to newly connected players is as simple as sending a persistent Manialink. Even sending [chat messages](/development/modules/advanced/server-chat-message) are simplified.
 
 Have a look around in the documentation and available classes to see what is possible!
+
+## Events
+It is recommended to fire events for actions or events that occur within a module, so that depending modules have a way to communicate.
+
+## Identifiers
+When creating names for things such as events, permissions or anything that require some kind of "identifier" that are used to reference the certain object or action. It is recommended to avoid using string literals.
+
+Most of these functions have support for [Enum Identifier](/development/modules/utility/enum-identifier), so use this instead as much as possible. This is much more maintainable and less prone for error.
