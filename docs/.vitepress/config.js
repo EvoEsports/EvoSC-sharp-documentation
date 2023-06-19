@@ -54,8 +54,8 @@ export default {
         {
           text: "Security",
           items: [
-            { text: "Permissions", link: "/development/modules/access-control/permissions.md" },
-            { text: "Auditing", link: "/development/modules/advanced/auditing.md" },
+            { text: "Permissions", link: "/development/modules/security/permissions.md" },
+            { text: "Auditing", link: "/development/modules/security/auditing.md" },
           ]
         },
         {
