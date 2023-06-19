@@ -23,7 +23,7 @@ In this case we are subscribing to the PlayerConnect event, so we can implement 
 private async Task OnPlayerConnectAsync(object sender, PlayerConnectGbxEventArgs e)
 {
     var player = await _playerManager.GetOnlinePlayerAsync(PlayerUtils.ConvertLoginToAccountId(e.Login));
-    await _remote.SendInfoMessageAsync($"Player {player.NickName} joined the server!");
+    await _remote.InfoMessageAsync($"Player {player.NickName} joined the server!");
 }
 ```
 
@@ -34,6 +34,7 @@ Let's subscribe to the same event above with the same parameters, but using the 
 
 We can start by creating a controller with the `EventControllerContext` context:
 ```csharp
+[Controller]
 public class ExampleEventController : EvoScController<EventControllerContext> // [!code focus]
 {
 
@@ -42,13 +43,14 @@ public class ExampleEventController : EvoScController<EventControllerContext> //
 
 Now let's subscribe to the PlayerConnect event with a handler method:
 ```csharp
+[Controller]
 public class ExampleEventController : EvoScController<EventControllerContext>
 {
     [Subscribe(GbxRemoteEvent.PlayerConnect, EventPriority.High)] // [!code focus:6]
     public async Task PlayerConnectAsync(object sender, PlayerConnectGbxEventArgs e)
     {
         var player = await _playerManager.GetOnlinePlayerAsync(PlayerUtils.ConvertLoginToAccountId(e.Login));
-        await _remote.SendInfoMessageAsync($"Player {player.NickName} joined the server!");
+        await _remote.InfoMessageAsync($"Player {player.NickName} joined the server!");
     }
 }
 ```
