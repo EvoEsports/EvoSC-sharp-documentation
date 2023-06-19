@@ -38,23 +38,23 @@ If you only use the framework's functionality providers, you normally don't need
 
 In order to ensure that modules are enabled and disabled when a user clicks those buttons, you can inherit the `IToggleable` interface.
 
-The interface exposes two asynchronous methods, `Enable` and `Disable`. These method names are pretty self-explainatory, but keep in mind that enabling or disabling a module does not mean loading or unloading a module.
+The interface exposes two asynchronous methods, `EnableAsync` and `DisableAsync`. These method names are pretty self-explainatory, but keep in mind that enabling or disabling a module does not mean loading or unloading a module.
 
 ::: info
 When a module is disabled, it is still loaded in memory, but the logic should not respond to anything.
 :::
 
-Example with the `IToggleable`:
+Example with `IToggleable`:
 ```csharp
 [Module]
 public class ExampleModule : EvoScModule, IToggleable// [!code focus]
 {
-    public Task Enable()// [!code focus:9]
+    public Task EnableAsync()// [!code focus:9]
     {
         // enable stuff in the module
     }
 
-    public Task Disable()
+    public Task DisableAsync()
     {
         // disable stuff from the module
     }
@@ -62,7 +62,28 @@ public class ExampleModule : EvoScModule, IToggleable// [!code focus]
 ```
 
 ## Installable Modules
-todo ...
+Before a module is enabled, it is "installed". This typically means setting up more permanent objects and data such as running database migrations, or creating and editing certain files. It is possible to hook into this event by implementing the `IInstallable` interface on the module class.
+
+It provides two methods, one for when a module is installed (`InstallAsync`), and another for when a module is uninstalled (`UninstallAsync`).
+
+Keep in mind that things such as running migrations is already automatically done and does not need to be triggered by implementing this interface.
+
+Example with `IInstallable`
+```csharp
+[Module]
+public class ExampleModule : EvoScModule, IInstallable// [!code focus]
+{
+    public Task InstallAsync()// [!code focus:9]
+    {
+        // install more permanent things for the module
+    }
+
+    public Task UninstallAsync()
+    {
+        // uninstall, remove and clean up any changes
+    }
+}
+```
 
 ## Module Loading Process
 Understanding the way modules are loaded and and the order in which the special module events are triggered can be useful.
