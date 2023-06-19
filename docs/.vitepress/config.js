@@ -25,6 +25,7 @@ export default {
           text: "Introduction",
           items: [
             { text: "Introduction", link: "/development/modules/index.md" },
+            { text: "Coding Guidelines", link: "/development/modules/coding-guidelines.md" },
             { text: "The Module Class", link: "/development/modules/module-class.md" },
             { text: "Settings", link: "/development/modules/settings.md" },
           ],
