@@ -60,3 +60,12 @@ It is recommended to fire events for actions or events that occur within a modul
 When creating names for things such as events, permissions or anything that require some kind of "identifier" that are used to reference the certain object or action. It is recommended to avoid using string literals.
 
 Most of these functions have support for [Enum Identifier](/development/modules/utility/enum-identifier), so use this instead as much as possible. This is much more maintainable and less prone for error.
+
+## Localization
+[Localization](/development/modules/advanced/localization.html) should be used whenever possible to provide a consistent UX for players. It also makes it much easier to maintain and translate UI text.
+
+### Naming Conventions
+- Localization displayed in audits should be prefixed with `Audit.`
+- Localization displayed in Manialinks should be prefixed with `UI.`
+- Use alphanumeric names, and use `.` to denote locale categories and sub categories.
+- The name should be similar to the actual text displayed.
