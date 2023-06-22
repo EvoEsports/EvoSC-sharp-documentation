@@ -78,10 +78,10 @@ export default {
           text: "Utility",
           items: [
             { text: "EnumIdentifier", link: "/development/modules/utility/enum-identifier.md" },
-            { text: "Match Settings", link: "/development/modules/advanced/matchsettings.md" },
-            { text: "Text Formatting", link: "/development/modules/advanced/text-formatting.md" },
-            { text: "Player Utilities", link: "/development/modules/advanced/player-utilities.md" },
-            { text: "Server Chat Message", link: "/development/modules/advanced/server-chat-message.md" },
+            { text: "Match Settings", link: "/development/modules/utility/matchsettings.md" },
+            { text: "Text Formatting", link: "/development/modules/utility/text-formatting.md" },
+            { text: "Player Utilities", link: "/development/modules/utility/player-utilities.md" },
+            { text: "Server Chat Message", link: "/development/modules/utility/server-chat-messages.md" },
           ]
         }
       ],
