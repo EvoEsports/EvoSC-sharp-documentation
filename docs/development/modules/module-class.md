@@ -44,6 +44,10 @@ The interface exposes two asynchronous methods, `EnableAsync` and `DisableAsync`
 When a module is disabled, it is still loaded in memory, but the logic should not respond to anything.
 :::
 
+::: tip
+For things that might run in the background for a prolonged time, it is recommended to use [Background Services](/development/modules/advanced/services.html#background-services).
+:::
+
 Example with `IToggleable`:
 ```csharp
 [Module]
