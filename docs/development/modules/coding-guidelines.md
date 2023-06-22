@@ -45,6 +45,7 @@ public class MyController : EvoScController<CommandInteractionContext>
 ## Services
 Services should follow the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). If a service becomes huge with lots of dependencies, it is usually a sign that you might want to split it up.
 
+Use the appropriate lifestyle for a service. Always use Transient if state or context is not needed.
 ## Unit Tests
 As much of the code as possible within a module should also be covered by unit tests. We recommend using [Moq 4](https://github.com/moq/moq4) to mock objects for tests.
 
@@ -67,5 +68,5 @@ Most of these functions have support for [Enum Identifier](/development/modules/
 ### Naming Conventions
 - Localization displayed in audits should be prefixed with `Audit.`
 - Localization displayed in Manialinks should be prefixed with `UI.`
-- Use alphanumeric names, and use `.` to denote locale categories and sub categories.
+- Use alphanumeric names in PascalCase, and use `.` to denote locale categories and sub categories.
 - The name should be similar to the actual text displayed.
