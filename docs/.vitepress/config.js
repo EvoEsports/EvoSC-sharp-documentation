@@ -71,6 +71,7 @@ export default {
           items: [
             { text: "Services", link: "/development/modules/advanced/services.md" },
             { text: "Migrations", link: "/development/modules/advanced/migrations.md" },
+            { text: "Localization", link: "/development/modules/advanced/localization.md" },
           ]
         },
         {
