@@ -70,3 +70,6 @@ Most of these functions have support for [Enum Identifier](/development/modules/
 - Localization displayed in Manialinks should be prefixed with `UI.`
 - Use alphanumeric names in PascalCase, and use `.` to denote locale categories and sub categories.
 - The name should be similar to the actual text displayed.
+
+## Auditing
+Whenever a protected or sensitive action occurs, always create an [audit record](/development/modules/security/auditing.html).
