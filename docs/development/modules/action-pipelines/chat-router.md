@@ -27,4 +27,4 @@ public class ProfanityFilterMiddleware
 
 The process for creating a component for the chat router is exactly the same as controller actions, except for the pipeline type we use `PipelineType.ChatRouter` instead.
 
-In the `ExecuteAsync` method, we pass a `ChatRouterPipelineContext`, which contains information about the chat message. In this case, we replace a curse word with it's sensored version so that `fuck` is displayed as `f**k` in the chat.
+In the `ExecuteAsync` method, we pass a `ChatRouterPipelineContext`, which contains information about the chat message. In this case, we replace a curse word with it's censored version so that `fuck` is displayed as `f**k` in the chat.
