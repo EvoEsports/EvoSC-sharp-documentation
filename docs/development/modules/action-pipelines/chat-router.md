@@ -3,7 +3,7 @@ The chat router pipeline is responsible for processing incoming chat messages. I
 
 The pipeline context also allows modifying the message, so that we can create formatted chat messages, remove certain elements of the message and more.
 
-We will go over and example where we create a profanity filter, which replaces cursing words.
+To further explain the chat router, we will use an example where we create a profanity filter, which replaces cursing words in chat messages.
 
 ```csharp
 [Middleware(For = PipelineType.ChatRouter)]
