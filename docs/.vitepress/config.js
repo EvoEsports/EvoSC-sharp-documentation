@@ -3,6 +3,7 @@ export default {
   title: "EvoSC# Docs",
   description: "Documentation for EvoSC#.",
   base: "/",
+  ignoreDeadLinks: true,
   markdown: {
     lineNumbers: true
   },
