@@ -71,3 +71,36 @@ public class PlayerGreeterController : EvoScController<IControllerContext>
         _playerGreeter.SayHello(args.Login);
 }
 ```
+
+## Background Services
+Background services are services are services that typically runs something in the background, in a separate thread. These services are instantiated automatically and executed.
+
+Perhaps you need to manage a network connection, or have a timer that executes ever so often. Background services would be the perfect option for these cases.
+
+These services are only executed once EvoSC# is ready and has established a connection with the game server and database. These services can also be used for graceful shutdown of background services to clean up any states.
+
+To create a background service, begin by creating a normal service which implements the `IBackgroundService` interface:
+
+```csharp
+[Service]
+public class MyBackgroundService : IBackgroundService
+{
+    public Task StartAsync()
+    {
+        return Task.CompletedTask;
+    }
+
+    public Task StopAsync()
+    {
+        return Task.CompletedTask;
+    }
+}
+```
+
+The interface exposes two methods, `StartAsync` and `StopAsync`. They are pretty self explainatory, but `StartAsync` is automatically called when the module is enabled, and `StopAsync` is called when the module is disabled. This allows you to both start and stop any background service that might be running for a module.
+
+::: warning
+If you wish to interact with the background service, do not try to inject this service. Instead, create a *singleton* service, that the background service controls with the Start/Stop methods. You can then interact with the background service anywhere by injecting this new singleton service.
+
+Keep in mind that you will need to make sure the singleton service is thread safe.
+:::

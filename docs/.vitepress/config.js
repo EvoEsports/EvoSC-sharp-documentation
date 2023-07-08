@@ -25,6 +25,7 @@ export default {
           text: "Introduction",
           items: [
             { text: "Introduction", link: "/development/modules/index.md" },
+            { text: "Coding Guidelines", link: "/development/modules/coding-guidelines.md" },
             { text: "The Module Class", link: "/development/modules/module-class.md" },
             { text: "Settings", link: "/development/modules/settings.md" },
           ],
@@ -53,8 +54,8 @@ export default {
         {
           text: "Security",
           items: [
-            { text: "Permissions", link: "/development/modules/access-control/permissions.md" },
-            { text: "Auditing", link: "/development/modules/advanced/auditing.md" },
+            { text: "Permissions", link: "/development/modules/security/permissions.md" },
+            { text: "Auditing", link: "/development/modules/security/auditing.md" },
           ]
         },
         {
@@ -70,16 +71,17 @@ export default {
           items: [
             { text: "Services", link: "/development/modules/advanced/services.md" },
             { text: "Migrations", link: "/development/modules/advanced/migrations.md" },
+            { text: "Localization", link: "/development/modules/advanced/localization.md" },
           ]
         },
         {
           text: "Utility",
           items: [
             { text: "EnumIdentifier", link: "/development/modules/utility/enum-identifier.md" },
-            { text: "Match Settings", link: "/development/modules/advanced/matchsettings.md" },
-            { text: "Text Formatting", link: "/development/modules/advanced/text-formatting.md" },
-            { text: "Player Utilities", link: "/development/modules/advanced/player-utilities.md" },
-            { text: "Server Chat Message", link: "/development/modules/advanced/server-chat-message.md" },
+            { text: "Match Settings", link: "/development/modules/utility/matchsettings.md" },
+            { text: "Text Formatting", link: "/development/modules/utility/text-formatting.md" },
+            { text: "Player Utilities", link: "/development/modules/utility/player-utilities.md" },
+            { text: "Server Chat Message", link: "/development/modules/utility/server-chat-messages.md" },
           ]
         }
       ],
