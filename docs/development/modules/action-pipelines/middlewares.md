@@ -1,5 +1,5 @@
 # Middlewares
-Middlwares are used to create components within an Action Pipeline. It can be done in modules by creating a class attributed by the type of pipeline to add the middleware to.
+Middlewares are used to create components within an Action Pipeline. It can be done in modules by creating a class attributed by the type of pipeline to add the middleware to.
 
 Let's try and example, where we want to log all commands called:
 ```csharp
