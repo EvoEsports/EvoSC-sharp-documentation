@@ -1,7 +1,7 @@
 # Chat Router
 The chat router pipeline is responsible for processing incoming chat messages. If the pipeline reaches the end, the chat message is displayed in the in-game chat.
 
-The pipeline context also allows modifying the message, so that we can create formatted chat messages or remove certain elements and so on.
+The pipeline context also allows modifying the message, so that we can create formatted chat messages, remove certain elements of the message and more.
 
 We will go over and example where we create a profanity filter, which replaces cursing words.
 
