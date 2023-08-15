@@ -9,6 +9,15 @@ export default {
   themeConfig: {
     logo: '/evo.png',
     sidebar: {
+      "/using-evosc/": [
+        {
+          text: "Introduction",
+          items: [
+            { text: "Introduction", link: "/using-evosc/index.md" },
+            { text: "Getting started", link: "/using-evosc/getting-started.md" }
+          ]
+        }
+      ],
       "/development/core/": [
         {
           text: "Introduction",
@@ -132,8 +141,7 @@ export default {
             {text: "EvoSC.Modules", link: "/api/Modules/"},
           ]
         }
-      ],
-
+      ]
     },
     nav: [
       { text: "For Server Admins", link: "/using-evosc/" },
