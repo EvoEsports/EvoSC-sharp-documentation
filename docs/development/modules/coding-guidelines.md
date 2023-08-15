@@ -10,12 +10,13 @@ Naming conventions are crucial for maintaining a consistent and organized codeba
 - **Consistency**: Maintain a uniform naming style throughout the project to improve codebase readability and understanding.
 - **PascalCase**: Module names should use PascalCase, where each word is capitalized without spaces or underscores.
 - **Meaningful Names**: Choose names that clearly convey the module's functionality and responsibility.
+- **Module postfix**: All modules should have the Module postfix after the module name. E.g. MapsModule.
 
 ### 2. Namespace Naming
 
 Namespaces are used to organize code and prevent naming conflicts. They should follow a similar structure to your project's directory structure.
 
-- **Root Namespace**: Use the organization name as the root namespace, followed by project-specific namespaces. All modules should have the Module postfix after the module name.
+- **Root Namespace**: Use the organization name as the root namespace, followed by project-specific namespaces. 
   Example: `EvoSC.Modules.<AuthorOrgName>.<ModuleName>Module`
 
 - **Sub-namespaces**: Use sub-namespaces to group related modules or components within a namespace.
