@@ -1,6 +1,27 @@
 # Introduction to the EvoSC# Module Framework
 When developing modules there are a set of guidelines and rules one should follow so that everything is as consistent and maintainable as possible between all modules. This page introduces general concepts that one should follow when developing modules. More specific rules are typically explained in their respective sections.
 
+## Naming Convention
+Naming conventions are crucial for maintaining a consistent and organized codebase in any software project. They help improve code readability, collaboration, and maintenance. This document outlines the recommended naming convention guidelines for modules within EvoSC#.
+
+### 1. General Principles
+
+- **Clarity**: Names should be clear, descriptive, and reflect the purpose of the module.
+- **Consistency**: Maintain a uniform naming style throughout the project to improve codebase readability and understanding.
+- **PascalCase**: Module names should use PascalCase, where each word is capitalized without spaces or underscores.
+- **Meaningful Names**: Choose names that clearly convey the module's functionality and responsibility.
+
+### 2. Namespace Naming
+
+Namespaces are used to organize code and prevent naming conflicts. They should follow a similar structure to your project's directory structure.
+
+- **Root Namespace**: Use the organization name as the root namespace, followed by project-specific namespaces. All modules should have the Module postfix after the module name.
+  Example: `EvoSC.Modules.<AuthorOrgName>.<ModuleName>Module`
+
+- **Sub-namespaces**: Use sub-namespaces to group related modules or components within a namespace.
+  Example: `EvoSC.Modules.<AuthorOrgName>.<ModuleName>Module.Utilities`
+
+
 ## Logic Abstraction Levels
 The code within a module have different levels of abstraction. For example, we try to avoid any logic in the main module class. And while controllers are meant to handle the logic, we also abstract lower level logic out of the controllers and put them in [services](/development/modules/advanced/services).
 

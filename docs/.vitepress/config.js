@@ -153,14 +153,14 @@ export default {
       copyright: 'Copyright © 2022 Evo'
     },
     editLink: {
-      pattern: 'https://github.com/EvoTM/EvoSC-sharp-documentation/master/docs/:path',
+      pattern: 'https://github.com/EvoEsports/EvoSC-sharp-documentation/master/docs/:path',
       text: 'Edit this page on GitHub'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/EvoTM/EvoSC-Sharp' },
+      { icon: 'github', link: 'https://github.com/EvoEsports/EvoSC-Sharp' },
       { icon: 'twitter', link: 'https://twitter.com/EvoTM' },
       { icon: 'facebook', link: 'https://facebook.com/EvoTrackmania'},
-      { icon: 'discord', link: 'https://discord.gg/evotm' },
+      { icon: 'discord', link: 'https://discord.gg/evoesports' },
       { icon: 'youtube', link: 'https://youtube.com/c/EvoTrackmania'}
     ],
   },
