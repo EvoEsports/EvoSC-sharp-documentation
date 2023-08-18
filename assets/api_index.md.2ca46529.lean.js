@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as o,S as t}from"./chunks/framework.f15d8f8c.js";const f=JSON.parse('{"title":"EvoSC Namespace","description":"","frontmatter":{},"headers":[],"relativePath":"api/index.md","filePath":"api/index.md"}'),r={name:"api/index.md"},s=t("",5),i=[s];function n(c,l,d,_,m,p){return a(),o("div",null,i)}const u=e(r,[["render",n]]);export{f as __pageData,u as default};
