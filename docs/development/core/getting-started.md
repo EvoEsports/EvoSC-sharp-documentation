@@ -27,6 +27,4 @@ Your server should be up and running! You can connect to it in Trackmania in the
 
 Go to the ``EvoSC`` directory, and run ``dotnet build`` to compile the source code. __You will need to do that every time before starting EvoSC if you modified the code__, else the changes won't apply.
 
-If you are using the default docker-compose setup, create the ``config`` directory under ``src/EvoSC/bin/Debug/net7.0/`` and place the [example main.toml](main.toml) inside.
-
-Then, run ``dotnet run``. EvoSC# is now up and running! Test it by connecting to the server: if there is a message with your login in the chat when connecting, everything should work. If not, check the terminal for errors.
+Afterwards, run ``dotnet run``. EvoSC# will now start with it's initial setup; it will automatically create a ``main.toml`` file in the ``config`` directory if one does not already exist. Change out the default values with the values you need for your server. After you have edited the config, run ``dotnet run`` once again and EvoSC# should now be running! Test it by connecting to the server: if there is a message with your login in the chat when connecting, everything should work. If not, check the terminal for errors.
