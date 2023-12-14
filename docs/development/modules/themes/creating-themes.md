@@ -62,7 +62,7 @@ In order to keep consistency and avoid conflicts and confusion, all theme option
 ### Using Base Theme Options
 The constructor of a theme class allows Dependency Injection. This means that we can inject the Current Theme Object, use existing options for our theme. It allows us to use the base theme to style our Manialink, in order to keep a consistent style.
 
-You may be wondering, can't we just use the base theme options directly instead of creating a theme with new options that uses them? This is where the philosophy of the controller comes in. Because we wan't provide people with a highly customizable and versatile server controller so that they can make it exactly how they want. So everything within a Manialink has it's own option, which can be overriden in the config or by other Modules to modify the look of it.
+You may be wondering, can't we just use the base theme options directly instead of creating a theme with new options that uses them? This is where the philosophy of the controller comes in. We want to provide people with a highly customizable and versatile server controller so that they can make it exactly how they want. Everything within a Manialink has it's own options, which can be overridden in the config or by other modules to modify the look of it.
 
 So now that you understand why we do it this way, let's see an example that uses some of the base options:
 
