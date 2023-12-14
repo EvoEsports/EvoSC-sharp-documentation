@@ -2,7 +2,7 @@
 Every theme is defined by a class which then provides options and component replacements. Here we will look into how one can create a new Theme within a module.
 
 ## How Themes Work
-When a theme class is defined, EvoSC# will automatically add this theme to the theme manager. In this process, if the theme is unique to the other themes, it is also activated. It is possible to have multiple themes active at the same time, with each, implementing their own set of options and component replacements.
+When a theme class is defined, EvoSC# will automatically add this theme to the theme manager. In this process, if the theme is unique to the other themes, it is also activated. It is possible to have multiple themes active at the same time, with each implementing their own set of options and component replacements.
 
 It is also possible to define a theme as overriding another theme. In this case, the theme will completely replace the theme which it is overriding.
 
