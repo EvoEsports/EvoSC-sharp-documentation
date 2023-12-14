@@ -23,7 +23,7 @@ So for example, if you want to set the color of a label, you can do something li
 ```
 
 ## Customizing the Theme
-EvoSC# provides to ways to customizing the theme, from the user or developer view. For developers creating new custom themes, we recommend to check out the section on [Creating Themes](./creating-themes.md).
+EvoSC# provides two ways to customizing the theme, from a user or developer perspective. For developers creating new custom themes, we recommend to check out the section on [Creating Themes](./creating-themes.md).
 
 For users, let's talk about the config file.
 
