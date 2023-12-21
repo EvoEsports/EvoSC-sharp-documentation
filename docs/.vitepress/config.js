@@ -53,6 +53,15 @@ export default {
           ]
         },
         {
+          text: "Themes",
+          items: [
+            { text: "Introduction", link: "/development/modules/themes/introduction.md" },
+            { text: "Usage", link: "/development/modules/themes/usage.md" },
+            { text: "Creating Themes", link: "/development/modules/themes/creating-themes.md" },
+            { text: "Base Options", link: "/development/modules/themes/base-options.md" },
+          ]
+        },
+        {
           text: "Security",
           items: [
             { text: "Permissions", link: "/development/modules/security/permissions.md" },
