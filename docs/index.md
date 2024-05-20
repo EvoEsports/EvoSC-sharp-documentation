@@ -11,6 +11,6 @@ hero:
       text: Get started with EvoSC#
       link: /using-evosc/
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/EvoTM/EvoSC-sharp
+      text: Develop Modules
+      link: /development/modules
 ---

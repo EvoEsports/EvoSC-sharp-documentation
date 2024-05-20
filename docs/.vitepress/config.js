@@ -50,6 +50,52 @@ export default {
             { text: "Manialink Controllers", link: "/development/modules/manialinks/controllers.md" },
             { text: "Form Validation", link: "/development/modules/manialinks/form-validation.md" },
             { text: "Permissions", link: "/development/modules/manialinks/permissions.md" },
+            {
+              text: 'Components',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Containers',
+                  collapsed: true,
+                  items: [
+                    { text: 'Container', link: '/development/modules/manialinks/components/container.md' },
+                    { text: 'Widget', link: '/development/modules/manialinks/components/widget.md' },
+                    { text: 'Window', link: '/development/modules/manialinks/components/window.md' },
+                  ]
+                },
+                {
+                  text: 'Controls',
+                  collapsed: true,
+                  items: [
+                    { text: 'Alert', link: '/development/modules/manialinks/components/alert.md' },
+                    { text: 'Button', link: '/development/modules/manialinks/components/button.md' },
+                    { text: 'Checkbox', link: '/development/modules/manialinks/components/checkbox.md' },
+                    { text: 'Chip', link: '/development/modules/manialinks/components/chip.md' },
+                    { text: 'Dropdown', link: '/development/modules/manialinks/components/dropdown.md' },
+                    { text: 'IconButton', link: '/development/modules/manialinks/components/iconbutton.md' },
+                    { text: 'LinkButton', link: '/development/modules/manialinks/components/linkbutton.md' },
+                    { text: 'Panel', link: '/development/modules/manialinks/components/panel.md' },
+                    { text: 'RadioButton', link: '/development/modules/manialinks/components/radiobutton.md' },
+                    { text: 'Rating', link: '/development/modules/manialinks/components/rating.md' },
+                    { text: 'ScrollBar', link: '/development/modules/manialinks/components/scrollbar.md' },
+                    { text: 'Separator', link: '/development/modules/manialinks/components/separator.md' },
+                    { text: 'Switch', link: '/development/modules/manialinks/components/switch.md' },
+                    { text: 'Tag', link: '/development/modules/manialinks/components/tag.md' },
+                    { text: 'Text', link: '/development/modules/manialinks/components/text.md' },
+                    { text: 'TextInput', link: '/development/modules/manialinks/components/textinput.md' },
+                  ]
+                },
+                {
+                  text: 'Drawing',
+                  collapsed: true,
+                  items: [
+                    { text: 'Circle', link: '/development/modules/manialinks/components/circle.md' },
+                    { text: 'QuarterCircle', link: '/development/modules/manialinks/components/quartercircle.md' },
+                    { text: 'Rectangle', link: '/development/modules/manialinks/components/rectangle.md' },
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -94,66 +140,14 @@ export default {
             { text: "Server Chat Message", link: "/development/modules/utility/server-chat-messages.md" },
           ]
         }
-      ],
-      "/api/Core/": [
-        {
-          text: "EvoSC.Core", items: [
-            {text: "Commands", link: "/api/Core/Commands/"},
-            {text: "Configuration", link: "/api/Core/Configuration/"},
-            {text: "Events", link: "/api/Core/Events/"},
-            {text: "Exceptions", link: "/api/Core/Exceptions/"},
-            {text: "Helpers", link: "/api/Core/Helpers/"},
-            {text: "Plugins", link: "/api/Core/Plugins/"},
-            {text: "Services", link: "/api/Core/Services/"},
-          ]
-        }
-      ],
-      "/api/Domain/": [
-        {
-          text: "EvoSC.Domain", items: [
-            {text: "Groups", link: "/api/Domain/Groups/"},
-            {text: "Maps", link: "/api/Domain/Maps/"},
-            {text: "Players", link: "/api/Domain/Players/"},
-          ]
-        }
-      ],
-      "/api/Interfaces/": [
-        {
-          text: "EvoSC.Interfaces", items: [
-            {text: "Commands", link: "/api/Interfaces/Commands/"},
-            {text: "Messages", link: "/api/Interfaces/Messages/"},
-            {text: "Players", link: "/api/Interfaces/Players/"},
-            {text: "UI", link: "/api/Interfaces/UI/"},
-          ]
-        }
-      ],
-      "/api/Modules/": [
-        {
-          text: "EvoSC.Modules", items: [
-            {text: "Info", link: "/api/Modules/Info/"},
-          ]
-        }
-      ],
-      "/api/": [
-        {
-          text: "Namespaces",
-          items: [
-            {text: "EvoSC.Core", link: "/api/Core/"},
-            {text: "EvoSC.Domain", link: "/api/Domain/"},
-            {text: "EvoSC.Interfaces", link: "/api/Interfaces/"},
-            {text: "EvoSC.Modules", link: "/api/Modules/"},
-          ]
-        }
-      ],
-
+      ]
     },
     nav: [
       { text: "For Server Admins", link: "/using-evosc/" },
       { text: "For Developers", items:
       [
-        { text: "Code Documentation", link: "/api/" },
-        { text: "Working on the core", link: "/development/core/" },
-        { text: "Developing modules ", link: "/development/modules/"}
+        { text: "Developing modules ", link: "/development/modules/"},
+        { text: "Working on the core", link: "/development/core/" }
       ], 
     },
     ],
