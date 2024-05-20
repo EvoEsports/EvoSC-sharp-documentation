@@ -27,3 +27,4 @@ Whether the panel allows contents to overflow its boundaries. If disabled, conte
 | **`data`** | [`string`](#) | `` | Custom data attribute to set. |
 | **`dataId`** | [`string`](#) | `` | ID data attribute to set. |
 | **`overflow`** | [`bool`](#) | `false` | Whether the panel allows contents to overflow its boundaries. If disabled, contents is cut off. |
+

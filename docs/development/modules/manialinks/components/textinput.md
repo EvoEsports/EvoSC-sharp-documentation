@@ -20,3 +20,4 @@ Default text to show when empty
 | **`autoSelect`** | [`bool`](#) | `false` | Whether to automatically select it's content when it is focused. |
 | **`maxLength`** | [`int`](#) | `255` | The maximum number of characters that can be added. |
 | **`placeholder`** | [`string`](#) | `` | Default text to show when empty |
+

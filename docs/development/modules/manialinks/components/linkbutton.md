@@ -21,3 +21,4 @@ Class to assign to the button.
 | **`action`** | [`string`](#) | `` | The action to call when clicking the button. This disables script events. |
 | **`disabled`** | [`bool`](#) | `false` | Whether the button is disabled or not. If disabled, the button wont fire events. |
 | **`className`** | [`string`](#) | `evosc-linkbutton` | Class to assign to the button. |
+

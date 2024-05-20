@@ -22,3 +22,4 @@ Whether to center the text on the tag background
 | **`bgColor`** | [`string?`](#) | `` | Custom background color of the tag |
 | **`textColor`** | [`string?`](#) | `` | Custom text color of the tag |
 | **`centerText`** | [`bool`](#) | `true` | Whether to center the text on the tag background |
+

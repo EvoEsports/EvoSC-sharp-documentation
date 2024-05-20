@@ -14,3 +14,4 @@ Text to display alongside the checkbox.
 | **`y`** | [`double`](#) | `0.0` | The Y position of the checkbox. |
 | **`isChecked`** | [`bool`](#) | `false` | The initial state of the checkbox. |
 | **`text`** | [`string`](#) | `` | Text to display alongside the checkbox. |
+

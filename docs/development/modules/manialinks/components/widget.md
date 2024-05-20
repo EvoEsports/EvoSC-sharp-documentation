@@ -18,3 +18,4 @@ If true, position and size acts on the grid system
 | **`ingrid`** | [`bool`](#) | `true` | Values: normal, unstyled |
 | **`gridsize`** | [`double`](#) | `12` | If true, position and size acts on the grid system |
 | **`cellsize`** | [`double`](#) | `10` | If true, position and size acts on the grid system |
+

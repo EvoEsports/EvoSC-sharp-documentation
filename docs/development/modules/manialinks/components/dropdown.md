@@ -17,3 +17,4 @@ Whether the dropdown button is disabled or not. If disabled, the panel wont open
 | **`height`** | [`double`](#) | `5.0` | Height of the button background. |
 | **`type`** | [`string`](#) | `primary` | Style type of the button, can be primary or secondary. |
 | **`disabled`** | [`bool`](#) | `false` | Whether the dropdown button is disabled or not. If disabled, the panel wont open. |
+

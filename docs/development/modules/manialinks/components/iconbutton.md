@@ -25,3 +25,4 @@ Size of the button can be normal, small, big or custom.
 | **`className`** | [`string`](#) | `evosc-iconbutton` | Custom style |
 | **`data`** | [`string`](#) | `` | Custom data passed to the component |
 | **`size`** | [`string`](#) | `normal` | Size of the button can be normal, small, big or custom. |
+

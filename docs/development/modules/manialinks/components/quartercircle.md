@@ -17,3 +17,4 @@ Styling class to pass to the quarter
 | **`action`** | [`string`](#) | `` | Action to trigger when mouse is clicked on the quarter |
 | **`quadrant`** | [`string`](#) | `None` | The quadrant of the quarter, can be: TopLeft, TopRight, BottomLeft or BottomRight |
 | **`className`** | [`string`](#) | `` | Styling class to pass to the quarter |
+

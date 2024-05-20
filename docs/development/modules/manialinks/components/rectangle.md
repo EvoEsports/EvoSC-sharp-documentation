@@ -24,3 +24,4 @@ Data Id attribute to set
 | **`corners`** | [`string`](#) | `TopLeft,TopRight,BottomLeft,BottomRight` | Corners to round off, can be a combined comma-separated list of the following values: TopLeft, TopRight, BottomLeft or BottomRight |
 | **`className`** | [`string`](#) | `` | Styling class to pass to the rectangle |
 | **`dataId`** | [`string`](#) | `` | Data Id attribute to set |
+

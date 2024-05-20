@@ -20,3 +20,4 @@ Custom text color of the chip
 | **`severity`** | [`string`](#) | `primary` | The severity color of the chip, can be: primary, secondary, success, info, warning, danger |
 | **`bgColor`** | [`string?`](#) | `` | Custom background color of the chip |
 | **`textColor`** | [`string?`](#) | `` | Custom text color of the chip |
+

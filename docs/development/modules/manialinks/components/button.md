@@ -23,3 +23,4 @@ Custom data passed to the component
 | **`disabled`** | [`bool`](#) | `false` | Whether the button is disabled or not. If disabled, the button wont fire events. |
 | **`className`** | [`string`](#) | `evosc-button` | Custom style |
 | **`data`** | [`string`](#) | `` | Custom data passed to the component |
+

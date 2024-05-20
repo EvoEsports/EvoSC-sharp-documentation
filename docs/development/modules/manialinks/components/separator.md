@@ -14,3 +14,4 @@ The direction of the separator, can be: horizontal or vertical
 | **`length`** | [`double`](#) | `10` | Length of the separator line |
 | **`thickness`** | [`double`](#) | `0.5` | Thickness of the separator line |
 | **`direction`** | [`string`](#) | `horizontal` | The direction of the separator, can be: horizontal or vertical |
+

@@ -22,3 +22,4 @@ Whether the contents of the window can be scrolled
 | **`canMove`** | [`bool`](#) | `true` | Whether the user can drag the window around. |
 | **`padding`** | [`double`](#) | `3` | Padding from the window border to the window contents |
 | **`scrollable`** | [`bool`](#) | `false` | Whether the contents of the window can be scrolled |
+
