@@ -140,8 +140,8 @@ for namespace in components:
     pageContents += "|------|------|---------|-------------|\n"
     
     for prop in component["props"]:
-        pageContents += "| **`" + prop["name"] + "`** | [`" + prop["type"] + "](#) | `" + prop["default"] + "` | " + prop["description"] + " |"
-        pageContents += "\n"
+        pageContents += "| **`" + prop["name"] + "`** | [`" + prop["type"] + "`](#) | `" + prop["default"] + "` | " + prop["description"] + " |"
+
     
     filePath = os.path.join(args.output_dir, component["name"].lower() + ".md")
     f = open(filePath, "w")
