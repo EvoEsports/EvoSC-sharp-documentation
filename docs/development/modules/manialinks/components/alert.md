@@ -1,5 +1,5 @@
 # Alert
-The text to display in the alert.
+Shows an animated alert box with a text and icon.
 
 ## Import
 ```xml:no-line-numbers
@@ -9,9 +9,4 @@ The text to display in the alert.
 ## Properties
 | Name | Type | Default | Description |
 |------|------|---------|-------------|
-| **`id`** | [`string`](#) | `evosc_alert` | The ID of the control. |
-| **`x`** | [`double`](#) | `-30.0` | X position of the control. |
-| **`y`** | [`double`](#) | `0.0` | Y position of the control. |
-| **`width`** | [`double`](#) | `60.0` | The area width of the alert text. |
-| **`text`** | [`string`](#) | `This is an alert` | The text to display in the alert. |
-| **`type`** | [`string`](#) | `primary` | The text to display in the alert. |
+| **`id`** | [`string`](#) | `evosc_alert` | The ID of the control. || **`x`** | [`double`](#) | `-30.0` | X position of the control. || **`y`** | [`double`](#) | `0.0` | Y position of the control. || **`width`** | [`double`](#) | `60.0` | The area width of the alert text. || **`text`** | [`string`](#) | `This is an alert` | The text to display in the alert. || **`type`** | [`string`](#) | `primary` | The text to display in the alert. |
