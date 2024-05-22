@@ -31,6 +31,7 @@ def parse_file(file):
         if descNode is not None and "function Comment" in str(descNode.tag):
             description = descNode.text
             
+            
         props = []
         previous = None
         for node in tree.find("./component").iter():
@@ -38,22 +39,23 @@ def parse_file(file):
                 type = node.attrib["type"]
                 name = node.attrib["name"]
                 default = None
-                description = None
+                propDesc = None
                 
                 if "default" in node.attrib:
                     default = node.attrib["default"]
                 
                 if previous is not None and "function Comment" in str(previous.tag):
-                    description = previous.text
+                    propDesc = previous.text
                 
                 props += [{
                     "name": name,
-                    "description": clean_xml_tags(str(description).strip()),
+                    "description": clean_xml_tags(str(propDesc).strip()),
                     "type": type,
                     "default": str(default)
                 }]
 
             previous = node
+        
     except Exception as e:
         print("Failed to read component: " + str(file))
         raise e
