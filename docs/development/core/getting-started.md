@@ -5,7 +5,7 @@ This documentation page will help you set up a directory containing everything y
 ## Prerequisites
 
 Start by installing [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) depending on your OS.
-You will also need [.NET 7](https://dotnet.microsoft.com/en-us/download)
+You will also need [.NET 8](https://dotnet.microsoft.com/en-us/download)
 
 ## Setting up a server
 
