@@ -5,24 +5,20 @@ modules, with a few key differences.
 
 ## Creating a New External Module
 
-All external modules are distributed as compiled `.dll` files and placed in the `modules` directory of your EvoSC#
-installation.
+All external modules are distributed as compiled `.dll` files and placed in it's own directory within the `modules` directory of your EvoSC# installation.
 
 ### Step 1: The Project & Module Class
 
 1. Create a new **Class Library** project for your module.
 2. Set the **Root namespace** to `EvoSC.Modules.<Project Name>`.
 3. Target the `net8.0` framework.
-4. Create your main module class, postfixed with `Module` (e.g., `PlayerModule`), and decorate it with the `[Module]`
-   attribute.
+4. Create your [development/modules/module-class](main module class), postfixed with `Module` (e.g., `PlayerModule`), and decorate it with the `[Module]` attribute.
 
 Example:
 
 ```csharp
 [Module]
-public class PlayerModule : EvoScModule
-{
-}
+public class PlayerModule : EvoScModule;
 ```
 
 ### Step 2: Module Meta Information
@@ -49,8 +45,11 @@ dependencies.
 
 **How to use ILRepack:**
 
-- Build your module.
-- Use ILRepack to merge your module `.dll` and all required dependency `.dll`s into one file.
+1. Build the module project.
+2. Use ILRepack to merge your module `.dll` and all required dependency `.dll`s into one file.
+
+> [!NOTE]
+> The binaries of a NuGet package may not appear in the build output of your project. You can usually find the location of the binaries within the NuGet cache directory, such as `%userprofile%\. nuget\packages` (windows) or `~/.nuget/packages` (linux/mac)
 
 Example command:
 
@@ -58,10 +57,14 @@ Example command:
 ilrepack /out:./merged/PlayerModule.dll PlayerModule.dll Dependency1.dll Dependency2.dll
 ```
 
+> [!WARNING]
+> Don't pack EvoSC# binaries with the module. This will cause type conflicts when the module is loaded. EvoSC#'s assemblies are automatically loaded with the module.
+
+
 ### Step 4: Packaging the Module
 
-1. Create a folder inside the `modules` directory, named after your module (e.g., `modules/PlayerModule`).
-2. Place your merged `.dll` and `info.toml` inside this folder.
+1. Create a directory inside the `modules` directory, named after your module (e.g., `modules/PlayerModule`).
+2. Place your merged `.dll` and `info.toml` inside this directory.
 
 Directory structure:
 
