@@ -17,7 +17,8 @@ export default {
             { text: "About EvoSC#", link: "/development/core/index.md" },
             { text: "Getting started", link: "/development/core/getting-started.md" },
             { text: "Overview", link: "/development/core/project-overview.md" },
-            { text: "Internal Modules", link: "/development/core/internal-modules.md" }
+            { text: "Internal Modules", link: "/development/core/internal-modules.md" },
+            { text: "External Modules", link: "/development/core/external-modules.md" }
           ],
         },
       ],
